@@ -1,0 +1,6 @@
+mochawesome-report
+node_modules
+screenshots
+*.log
+Untitled-1.js
+npm-debug.log.*
