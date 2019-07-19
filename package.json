@@ -1,10 +1,10 @@
 {
-  "name": "abtt_api_test",
+  "name": "node_api_test",
   "version": "1.0.0",
-  "description": "AB Tool api test",
+  "description": "api test with mocha",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests"
   },
   "author": "sxiong",
   "license": "ISC",
