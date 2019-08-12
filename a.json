@@ -1,0 +1,31 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "headline": "13 Best Baby Activity Centers for Endless Entertainment",
+  "datePublished": "2019-07-23T21:28:07.417Z",
+  "dateModified": "2019-07-23T21:28:07.417Z",
+  "author": {
+    "@type": "Person",
+    "name": "Emily Platt"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Bump",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://static.thebump.com/shared-web/logos/bump_logo_landscape.png"
+    }
+  },
+  "description": "Keep your curious kid occupied all while boosting their development.",
+  "video": [],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.ctfassets.net/6m9bd13t776q/1PlGWGVPPFYcqxsycIxbNR/9ab0c7b52270113c51a9d8772f34635c/activity-centers-baby-2160x1200.jpg?q=75",
+    "height": 950,
+    "width": 1152
+  }
+}

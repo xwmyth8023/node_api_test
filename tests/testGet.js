@@ -1,29 +1,30 @@
 const config = require('config'),
 chakram = require('chakram'),
 Promise = require('bluebird'),
-schema = require('../schemas/example.js'),
+schema = require('../schemas/schema.js'),
 dataFactory = require('../helper/dataFactory'),
 Chance = require('chance'); 
 
 let expect = chakram.expect,
 chance = new Chance(),
-apiHostUrlv1 = config.get('apiHostUrl'),
+apiHostUrl = config.get('apiHostUrl'),
 timeoutLength = config.get('timeoutLength'),
 apiResponse;
 
 describe('',function(){
+    console.log(apiHostUrl)
     this.timeout(timeoutLength);
     chakram.addMethod('joi', require('chakram-joi'));
 
     describe('Get',function(){
 
-        let params = exampleParam
+        let params = 'exampleParam'
 
         before(function(){
             return Promise
                 .resolve()
                 .then(function() {
-                    apiResponse = chakram.get(`${apiHostUrlv1}/${params}`)
+                    apiResponse = chakram.get(`${apiHostUrl}/${params}`)
                     return apiResponse;
                 })
         });
@@ -46,7 +47,7 @@ describe('',function(){
 
         before(async function(){
             token = await token.getToken()
-            apiResponse = chakram.post(`${apiHostUrl}/path`, postData, { headers: {'content-type': 'application/json'}})
+            apiResponse = chakram.post(`${apiHostUrl}/path`, postbody, { headers: {'content-type': 'application/json'}})
         })
 
         it('should return 200',function(){

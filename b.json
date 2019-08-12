@@ -1,0 +1,33 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "headline": "Feeding Supplies for a Newborn",
+  "datePublished": "2017-03-30T19:11:35.133Z",
+  "dateModified": "2017-03-30T19:11:35.133Z",
+  "author": {
+    "@type": "Person",
+    "name": "Paula Kashtan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Bump",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://static.thebump.com/shared-web/logos/bump_logo_landscape.png",
+      "width": 322,
+      "height": 60
+    }
+  },
+  "description": "Whether you're planning to breastfeed or bottle-feed, here's what feeding supplies you'll need for baby.    ",
+  "video": [],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.ctfassets.net/6m9bd13t776q/4pKXxJDqmL4h4Z4SFb8u7v/8f00151b572c15161c8e557dfa6f86a3/feeding-supplies-dad-newborn-2160x1200.jpg?q=75",
+    "height": 1152,
+    "width": 950
+  }
+}
