@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Install dependencies') {
             steps {
-                echo 'Building..'
+                sh 'make install'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh 'mocha tests'
             }
         }
         stage('Deploy') {
