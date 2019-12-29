@@ -3,8 +3,10 @@ pipeline {
 
     stages {
         stage('Docker build') {
-            container('docker') {
+            steps {
+                container('docker') {
                     sh "make docker-build"
+               }
             }
         }
         stage('Test') {
