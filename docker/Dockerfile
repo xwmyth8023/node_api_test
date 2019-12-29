@@ -13,7 +13,7 @@ RUN chmod +x /usr/bin/docker-shell
 
 ADD ./package.json $APPDIR/package.json
 # ADD ./.npmrc $APPDIR/.npmrc
-
+RUN npm install -g mocha
 RUN npm install
 
 ADD . $APPDIR
