@@ -1,0 +1,14 @@
+
+pluginDev:
+  image: node_api_test
+  command: -t
+  volumes:
+    - ../src:/opt/app/current/src
+    - ../test:/opt/app/current/test
+    - ../coverage:/opt/app/current/coverage
+pluginJenkins:
+  image: node_api_test
+  command: -j
+  volumes:
+      - ../mochawesome-report:/opt/app/current/mochawesome-report
+      - ../screenshots:/opt/app/current/screenshots

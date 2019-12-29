@@ -2,14 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Install dependencies') {
-            steps {
-                sh 'make install'
+        stage('Docker build') {
+            container('docker') {
+                    sh "make docker-build"
             }
         }
         stage('Test') {
             steps {
-                sh 'mocha tests'
+                container('docker') {
+                    sh "make docker-run"
+                }
             }
         }
         stage('Deploy') {
