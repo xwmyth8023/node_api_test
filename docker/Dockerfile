@@ -1,4 +1,4 @@
-FROM ubuntu:lastest
+FROM ubuntu
 
 ENV APPDIR /opt/app/current
 
