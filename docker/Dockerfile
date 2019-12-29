@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM node
 
 ENV APPDIR /opt/app/current
 
