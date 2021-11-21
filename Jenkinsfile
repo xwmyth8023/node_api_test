@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Docker build') {
             steps {
-                sh "make docker-build"
+                echo "build start"
             }
         }
         stage('Test') {
             steps { 
-                sh "make docker-run"
+                echo "running tests"
             }
         }
         stage('Deploy') {
