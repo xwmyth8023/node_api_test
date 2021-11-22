@@ -2,7 +2,7 @@ NAME=node_api_test
 VERSION=latest
 
 test:
-	mocha tests
+	./node_modules/.bin/mocha tests
 
 install:
 	@rm -rf ./node_modules
