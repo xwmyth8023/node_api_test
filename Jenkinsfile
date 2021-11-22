@@ -14,17 +14,13 @@ pipeline {
     stage('Install Dependencies') {
       when { anyOf { branch 'qa'; branch 'production' } }
       steps {
-        container('docker'){
           sh "make install"
-        }
       }
     }
     stage('Running tests') {
       when { anyOf { branch 'qa'; branch 'production' } }
       steps { 
-        container('docker'){
           sh "make test"
-        }
       }
     }
   }
