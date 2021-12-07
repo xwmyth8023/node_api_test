@@ -1,5 +1,9 @@
 FROM node
 
+ARG node_env
+
+ENV NODE_ENV=$node_env
+
 ENV APPDIR /opt/app/current
 
 WORKDIR $APPDIR

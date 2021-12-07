@@ -11,16 +11,21 @@ pipeline {
     cron "$CHRON_STRING"
   }
   stages {
-    stage('Install Dependencies') {
+    stage('Build Image') {
       when { anyOf { branch 'qa'; branch 'production' } }
       steps {
-          sh "make install"
+        container('docker'){
+          sh "echo ${NODE_ENV}"
+          sh "make docker-build"
+        }
       }
     }
     stage('Running tests') {
       when { anyOf { branch 'qa'; branch 'production' } }
       steps { 
-          sh "make test"
+        container('docker'){
+          sh "make docker-run"
+        }
       }
     }
   }
