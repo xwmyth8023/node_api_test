@@ -14,18 +14,14 @@ pipeline {
     stage('Build Image') {
       when { anyOf { branch 'qa'; branch 'production' } }
       steps {
-        container('docker'){
           sh "echo ${NODE_ENV}"
           sh "make docker-build"
-        }
       }
     }
     stage('Running tests') {
       when { anyOf { branch 'qa'; branch 'production' } }
       steps { 
-        container('docker'){
-          sh "make docker-run"
-        }
+        sh "make docker-run"
       }
     }
   }
