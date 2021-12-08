@@ -24,6 +24,11 @@ pipeline {
         sh "make docker-run"
       }
     }
+    stage('Clean Image'){
+      steps {
+        sh "make docker-clean"
+      }
+    }
   }
   post {
     always {
