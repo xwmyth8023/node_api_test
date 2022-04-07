@@ -1,5 +1,5 @@
 {
-  "apiHostUrl":"test.com",
+  "apiHostUrl":"https://postman-echo.com",
   "memberEmail":"",
   "memberPassword":"",
   "apiKey":"",
