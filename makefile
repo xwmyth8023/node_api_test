@@ -15,4 +15,4 @@ docker-run:
 	@docker run $(NAME)
 
 docker-clean:
-	@docker rm -vf $(docker ps -aq)
+	@docker rm -rf $(docker ps -aq)
